@@ -1,0 +1,10 @@
+---
+- name: Playbook to share files with ansible host
+  hosts: ansible
+  remote_user: haneesha
+  become: true
+  tasks:
+  - name: Sending the war-file into ansible host
+    copy:
+      src: war/milestone-assessment-0.0.1-SNAPSHOT.war
+      dest: /home/haneesha/webapp.war
