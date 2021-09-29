@@ -97,4 +97,16 @@
       </plugins>
     </pluginManagement>
   </build>
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>DTP-HP-releases</name>
+        <url>http://localhost:8081/artifactory/azure-repository-libs-release</url>
+    </repository>
+     <snapshotRepository>
+        <id>snapshots</id>
+        <name>DTP-HP-snapshots</name>
+        <url>http://localhost:8081/artifactory/azure-repository-libs-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
